@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+body{
+    font-family: arial, san-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fdfc;
+}
+.container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+/* .left-side, .right-side{
+    flex: 1;
+    padding: 20px;
+} */
+.left-side{
+    padding: 120px 0px 50px 0px;
+    /* margin: 0 130px 0 130px; */
+    margin-left: 100px;
+    width: 50%;
+    
+}
+.left-side h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.left-side p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #ccc;
+}
+.right-side{
+    padding: 20px;
+    width: 50%;
+    background-color: #fff;
+    margin: 0 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 176, 176, 0.116), 0 6px 20px 0 rgba(201, 199, 199, 0.075);
+}
+form{
+    margin: 0 40px;
+    width: 450px;
+   
+    
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+label select option{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.form-row{
+    display: flex;
+    gap: 10px;
+}
+.form-row > div{
+    flex: 1;
+}
+.text-area{
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.firstName{
+    border-color:  #2ec4b6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+input .dob{
+    font-family: 'Inter',sans-serif;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+button{
+    width: 100%;
+    padding: 12px 0;
+    background-color: #2ec4b6;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.register-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.register-text a{
+    color: #2ec4b6;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        display: block;
+    }
+    .left-side,
+    .right-side{
+        flex: none;
+        width: 100%;
+    }
+    form{
+        max-width: none;
+        margin: auto;
+    }
+    .container{
+        display: block;
+       }
+       .left-side p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        color: #ccc;
+        font-size: 15px;
+    }
+        form{
+            max-width: none;
+            margin: 0 auto;
+        }
+        .left-side,
+        .right-side{
+            flex: none;
+            width: 100%;
+        }
+        .left-side{
+            margin: 0;
+            margin-left: 30px;
+            margin-top: 200%;
+            padding: 0;
+        }
+        .right-side{
+            /* padding: 20px; */
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        .form-row{
+            display: block;
+        }
+        input{
+            width: 55%;
+        }
+        select{
+            width: 55%;
+        }
+        
+        button{
+            width: 55%;
+        }
+        .register-text{
+            text-align: left;
+            font-size: 7px;
+        }
+    }
